@@ -14,9 +14,9 @@
     <style>
         :root {
             --primary-color: #0000;
-            --bg-dark: #050e1d;
-            --text-color: #55919e;
-            --background-color-main: #284b58;;
+            --text-color-dark: #284b58;
+            --text-color-light: #55919e;
+            --background-color-main: #050e1d;
             --background-color-secondary: #55919e;
         }
         
@@ -35,12 +35,12 @@
             <!-- Header -->
             <div class="tab-content" id="myTabContent1">
                 <div class="text-center d-flex justify-content-end gap-2 my-3">
-                    <span class="badge rounded-pill bg-dark text-info border border-dark fw-semibold px-3 py-2">
+                    <span class="badge rounded-pill text-info border border-dark fw-semibold px-3 py-2" style="background-color: #050e1d !important;">
                         Owner: Arxdevs
                     </span>
                 </div>
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="position-relative bg-dark p-4 rounded-3">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="background-color: #050e1d !important;">
+                    <div class="position-relative p-4 rounded-3">
                         <div class="row py-4">
                             <div class="col-lg-8 mx-auto gap-4 d-flex flex-column align-items-center">
                                 <h1 class="text-center text-uppercase my-0 text-info fw-bold display-4">
@@ -51,7 +51,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-12 d-flex justify-content-center m-3">
-                                <img src="./assets/icons/banner-logo.webp" class="img-fluid" style="width: 20%; background-color: #050e1d;" />
+                                <img src="./assets/icons/banner-logo.webp" class="img-fluid" style="width: 20%; background-color: #050e1d !important;" />
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
             </div>
             
             <!-- Description of module -->
-            <div class="my-5 p-5 bg-dark rounded-3 shadow mt-3">
+            <div class="my-5 p-5 rounded-3 shadow mt-3" style="background-color: #050e1d !important;">
                 <div class="row position-relative overflow-hidden">
                     <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center">
                         <h2 class="text-center fw-bold display-5 mb-5 text-info">
@@ -110,31 +110,31 @@
             
 
             <!-- Screenshot and other -->
-            <div class="mb-4 bg-dark text-light border border-info rounded-3 shadow">
-                <div class="bg-dark">
-                    <ul class="nav nav-tabs justify-content-center bg-dark py-2 rounded-top" id="myTab" role="tablist">
-                        <li class="nav-item">
+            <div class="mb-4 text-light border border-info rounded-3 shadow">
+                <div style="background-color: #050e1d !important;">
+                    <ul class="nav nav-tabs justify-content-center py-2 rounded-top" id="myTab" role="tablist">
+                        <li class="nav-item" style="background-color: #050e1d !important;">
                             <a class="nav-link active text-info fw-medium" data-bs-toggle="tab" href="#overview" id="overview-tab" role="tab" aria-controls="overview" style="font-size: 16px;">
                                 Screenshots
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" style="background-color: #050e1d !important;">
                             <a class="nav-link text-info fw-medium" data-bs-toggle="tab" href="#feature" id="feature-tab" role="tab" aria-controls="feature" style="font-size: 16px;">
                                 Features
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" style="background-color: #050e1d !important;">
                             <a class="nav-link text-info fw-medium" data-bs-toggle="tab" href="#videos" id="videos-tab" role="tab" aria-controls="faq" style="font-size: 16px;">
                                 Videos
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="tab-content p-md-5 p-2 py-3 bg-dark text-info" id="myTabContent">
+                <div class="tab-content p-md-5 p-2 py-3 text-info" id="myTabContent" style="background-color: #050e1d !important;">
 
                     <!-- SCREENSHOTS -->
                     <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
-                        <div class="position-relative mb-4 bg-dark rounded-2 p-md-5 p-3">
+                        <div class="position-relative mb-4 rounded-2 p-md-5 p-3">
                             <div class="row">
                                 <div class="col-md-12 text-center">
                                     <h1 class="fw-bold display-5 text-info">
@@ -221,7 +221,7 @@
             </div>
 
             <!-- FAQS -->
-            <div class="mb-4 mt-1 p-2 bg-dark text-light border border-info rounded shadow">
+            <div class="mb-4 mt-1 p-2 text-light border border-info rounded shadow" style="background-color: #050e1d !important;">
                 <div aria-labelledby="faq-tab" class="tab-pane fade show" id="faq" role="tabpanel">
                     <div class="row">
                         <div class="col-lg-12 d-flex flex-column align-items-center">
@@ -244,7 +244,7 @@
                                             <div class="accordion-collapse collapse"
                                                 aria-labelledby="collapseFaq1" data-bs-parent="#accordion_faq"
                                                 id="collapseFaq1">
-                                                <p class="card-body text-info bg-dark">
+                                                <p class="card-body text-info">
                                                     Response 1
                                                 </p>
                                             </div>
@@ -262,7 +262,7 @@
                                             <div class="accordion-collapse collapse"
                                                 aria-labelledby="collapseFaq2" data-bs-parent="#accordion_faq"
                                                 id="collapseFaq2">
-                                                <p class="card-body text-info bg-dark">
+                                                <p class="card-body text-info">
                                                     Response 2
                                                 </p>
                                             </div>
@@ -280,7 +280,7 @@
                                             <div class="accordion-collapse collapse"
                                                 aria-labelledby="collapseFaq3" data-bs-parent="#accordion_faq"
                                                 id="collapseFaq3">
-                                                <p class="card-body text-info bg-dark">
+                                                <p class="card-body text-info">
                                                     Response 3
                                                 </p>
                                             </div>
@@ -294,7 +294,7 @@
             </div>
 
             <!-- Other modules -->
-            <section id="services" class="mt-5 bg-dark text-light rounded shadow p-5">
+            <section id="services" class="mt-5 text-light rounded shadow p-5" style="background-color: #050e1d !important;">
                 <div class="text-center mt-4">
                     <h3 class="text-info font-weight-bold text-uppercase mb-5" style="font-size: 40px;">
                         Other modules
@@ -303,7 +303,7 @@
                 <div class="row mt-3">
                     <div class="col-lg-3 col-sm-12">
                         <a href="#" class="text-decoration-none">
-                            <div class="btn-lg btn-block p-4 d-flex flex-column justify-content-center align-items-center bg-dark rounded border border-info ">
+                            <div class="btn-lg btn-block p-4 d-flex flex-column justify-content-center align-items-center rounded border border-info ">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <img src="./assets/icons/other_module_3.png" class="img-fluid" style="height: 58px; width: 58px;">
                                 </div>
@@ -313,7 +313,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-12">
                         <a href="#" class="text-decoration-none">
-                            <div class="btn-lg btn-block p-4 d-flex flex-column justify-content-center align-items-center bg-dark rounded border border-info ">
+                            <div class="btn-lg btn-block p-4 d-flex flex-column justify-content-center align-items-center rounded border border-info ">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <img src="./assets/icons/other_module_1.png" class="img-fluid" style="height: 58px; width: 58px;">
                                 </div>
@@ -323,7 +323,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-12">
                         <a href="#" class="text-decoration-none">
-                            <div class="btn-lg btn-block p-4 d-flex flex-column justify-content-center align-items-center bg-dark rounded border border-info ">
+                            <div class="btn-lg btn-block p-4 d-flex flex-column justify-content-center align-items-center rounded border border-info ">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <img src="./assets/icons/other_module_2.png" class="img-fluid" style="height: 58px; width: 58px;">
                                 </div>
@@ -333,7 +333,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-12">
                         <a href="#" class="text-decoration-none">
-                            <div class="btn-lg btn-block p-4 d-flex flex-column justify-content-center align-items-center bg-dark rounded border border-info ">
+                            <div class="btn-lg btn-block p-4 d-flex flex-column justify-content-center align-items-center rounded border border-info ">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <img src="./assets/icons/other_module_3.png" class="img-fluid" style="height: 58px; width: 58px;">
                                 </div>
@@ -345,7 +345,7 @@
             </section>
 
             <!-- Footer -->
-            <div class="footer mt-5 p-5 bg-dark text-info rounded">
+            <div class="footer mt-5 p-5 text-info rounded" style="background-color: #050e1d !important;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">

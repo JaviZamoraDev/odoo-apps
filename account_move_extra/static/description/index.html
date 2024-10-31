@@ -222,57 +222,72 @@
 
             <!-- FAQS -->
             <div class="mb-4 mt-1 p-2 bg-dark text-light border border-info rounded shadow">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h1 class="font-weight-bold text-info">
-                            FAQs
-                        </h1>
-                    </div>
-                    <div class="col-md-12">
-                        <div id="accordion_faq" class="mb-4">
-                            <div class="card border-info mb-3 shadow-sm">
-                                <div class="card-header bg-dark" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link text-info collapsed" type="button" data-toggle="collapse" data-target="#collapseFaq1" aria-expanded="false" aria-controls="collapseFaq1">
-                                            Faq 1?
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseFaq1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion_faq">
-                                    <div class="card-body text-info bg-dark">
-                                        Response 1
+                <div aria-labelledby="faq-tab" class="tab-pane fade show" id="faq" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex flex-column align-items-center">
+                            <h1 class="font-weight-bold text-info">
+                                FAQs
+                            </h1>
+                        </div>
+                        <div class="col-md-12" aria-labelledby="faq-tab" id="faq1" role="tabpanel">
+                            <div class="accordion mb-4" id="accordion6">
+                                <div>
+                                    <!-- accordian -->
+                                    <div class="accordion" id="accordion_faq">
+                                        <!-- Question 1 -->
+                                        <div style="margin:1rem 0rem">
+                                            <div aria-expanded="false" class="cursor-pointer card-header collapsed border border-info" data-bs-toggle="collapse" aria-controls="collapseFaq1" data-bs-target="#collapseFaq1">
+                                                <a class="card-title text-decoration-none text-info">
+                                                    Faq 1?
+                                                </a>
+                                            </div>
+                                            <div class="accordion-collapse collapse"
+                                                aria-labelledby="collapseFaq1" data-bs-parent="#accordion_faq"
+                                                id="collapseFaq1">
+                                                <p class="card-body text-info bg-dark">
+                                                    Response 1
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- Question 2 -->
+                                        <div style="margin:1rem 0rem">
+                                            <div aria-expanded="false"
+                                                class="cursor-pointer card-header collapsed border border-info"
+                                                data-bs-toggle="collapse" aria-controls="collapseFaq2"
+                                                data-bs-target="#collapseFaq2">
+                                                <a class="card-title text-decoration-none text-info">
+                                                    Faq 2?
+                                                </a>
+                                            </div>
+                                            <div class="accordion-collapse collapse"
+                                                aria-labelledby="collapseFaq2" data-bs-parent="#accordion_faq"
+                                                id="collapseFaq2">
+                                                <p class="card-body text-info bg-dark">
+                                                    Response 2
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- Question 3 -->
+                                        <div style="margin:1rem 0rem">
+                                            <div aria-expanded="false"
+                                                class="cursor-pointer card-header collapsed border border-info"
+                                                data-bs-toggle="collapse" aria-controls="collapseFaq3"
+                                                data-bs-target="#collapseFaq3">
+                                                <a class="card-title text-decoration-none text-info">
+                                                    Faq 3?
+                                                </a>
+                                            </div>
+                                            <div class="accordion-collapse collapse"
+                                                aria-labelledby="collapseFaq3" data-bs-parent="#accordion_faq"
+                                                id="collapseFaq3">
+                                                <p class="card-body text-info bg-dark">
+                                                    Response 3
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card border-info mb-3 shadow-sm">
-                                <div class="card-header bg-dark" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link text-info collapsed" type="button" data-toggle="collapse" data-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
-                                            Faq 2?
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseFaq2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion_faq">
-                                    <div class="card-body text-info bg-dark">
-                                        Response 2
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-info mb-3 shadow-sm">
-                                <div class="card-header bg-dark" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link text-info collapsed" type="button" data-toggle="collapse" data-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
-                                            Faq 3?
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseFaq3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion_faq">
-                                    <div class="card-body text-info bg-dark">
-                                        Response 3
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Repite la misma estructura para otros FAQs si es necesario -->
                         </div>
                     </div>
                 </div>

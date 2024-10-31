@@ -124,7 +124,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-info fw-medium" data-bs-toggle="tab" href="#videos" id="faq-tab" role="tab" aria-controls="faq" style="font-size: 16px;">
+                            <a class="nav-link text-info fw-medium" data-bs-toggle="tab" href="#videos" id="videos-tab" role="tab" aria-controls="faq" style="font-size: 16px;">
                                 Videos
                             </a>
                         </li>
@@ -177,36 +177,130 @@
                             <!-- Repite la misma estructura para otras columnas según sea necesario -->
                         </div>
                     </div>                    
-                    <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                    <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
                         <div class="row">
                             <div class="col-lg-12 text-center">
                                 <h1 class="fw-bold text-info display-5">
-                                    FAQs
+                                    Videos
                                 </h1>
                             </div>
-                            <div class="col-md-12">
-                                <div class="accordion mb-4" id="accordion_faq">
-                                    <!-- FAQ Question 1 -->
-                                    <div class="accordion-item border border-info rounded-2 mb-3 shadow-sm">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed bg-dark text-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1" aria-expanded="false" aria-controls="collapseFaq1">
-                                                Faq 1?
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFaq1" class="accordion-collapse collapse" data-bs-parent="#accordion_faq">
-                                            <div class="accordion-body text-info">
-                                                Response 1
-                                            </div>
-                                        </div>
+                            <div class="col-md-4 p-3">
+                                <div class="card bg-dark border-info text-info shadow-sm">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fw-bold">Video Title 1</h5>
+                                        <p class="card-text">Short description of Video 1.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                                            Watch Video
+                                        </button>
                                     </div>
-                                    <!-- Repeat similar structure for other FAQs -->
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="card bg-dark border-info text-info shadow-sm">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fw-bold">Video Title 2</h5>
+                                        <p class="card-text">Short description of Video 2.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                                            Watch Video
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3">
+                                <div class="card bg-dark border-info text-info shadow-sm">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fw-bold">Video Title 3</h5>
+                                        <p class="card-text">Short description of Video 3.</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                                            Watch Video
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modals for Videos -->
+                    <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModal1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content bg-dark text-info">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title fw-bold" id="videoModal1Label">Video Title 1</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="https://www.youtube.com/embed/videoID1" title="YouTube video" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModal2Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content bg-dark text-info">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title fw-bold" id="videoModal2Label">Video Title 2</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="https://www.youtube.com/embed/videoID2" title="YouTube video" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModal3Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content bg-dark text-info">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title fw-bold" id="videoModal3Label">Video Title 3</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="https://www.youtube.com/embed/videoID3" title="YouTube video" allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            
+            <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="fw-bold text-info display-5">
+                            FAQs
+                        </h1>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="accordion mb-4" id="accordion_faq">
+                            <!-- FAQ Question 1 -->
+                            <div class="accordion-item border border-info rounded-2 mb-3 shadow-sm">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1" aria-expanded="false" aria-controls="collapseFaq1">
+                                        Faq 1?
+                                    </button>
+                                </h2>
+                                <div id="collapseFaq1" class="accordion-collapse collapse" data-bs-parent="#accordion_faq">
+                                    <div class="accordion-body text-info">
+                                        Response 1
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat similar structure for other FAQs -->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Other modules -->
             <section id="services" class="mt-5" style="border-radius: 16px; border: 1px solid #EBEEF2; background-color: #050e1d !important; padding: 60px 40px; box-shadow: 0px 5px 20px -11px #00000040;">

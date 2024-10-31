@@ -130,175 +130,83 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="tab-content p-md-5 p-2 py-3" id="myTabContent" style="background-color: #050e1d !important; color: #55919e !important">
-                <div aria-labelledby="overview-tab" class="tab-pane fade show active" id="overview" role="tabpanel">
-                    <div class="position-relative mb-4" style="border-radius:10px; background-color: #050e1d !important;">
-                        <div class="p-md-5 p-3 position-relative">
+                <div class="tab-content p-md-5 p-2 py-3 bg-dark text-info" id="myTabContent">
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                        <div class="position-relative mb-4 bg-dark rounded-2 p-md-5 p-3">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <h1 style="font-weight:bold; font-size:calc(1.1rem + 1vw); line-height:120%; text-align:center; text-transform:capitalize; font-size: 40px; font-weight: 700;">
-                                        <span style="font-size:calc(1.1rem + 1vw); color: #55919e !important">
-                                            Imagen title
-                                        </span>
+                                <div class="col-md-12 text-center">
+                                    <h1 class="fw-bold display-5 text-info">
+                                        Imagen title
                                     </h1>
                                 </div>
-                                <div class="col-md-12 mb-4">
-                                    <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center;">
+                                <div class="col-md-12 mb-4 text-center">
+                                    <p class="fw-normal fs-5">
                                         Description image
                                     </p>
                                 </div>
                                 <div class="col-md-12 text-center">
-                                    <div class="d-inline-block p-3 shadow-sm" style="border-radius:10px">
-                                        <img alt="" class="img-fluid" loading="lazy" src="./assets/screenshots/1.png" style="min-height: 1px;">
+                                    <div class="d-inline-block p-3 shadow-sm rounded-2">
+                                        <img src="./assets/screenshots/1.png" alt="" class="img-fluid" loading="lazy">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div aria-labelledby="overview-tab" class="tab-pane fade show active" id="overview" role="tabpanel">
-                        <div class="position-relative mb-4" style="border-radius:10px; background-color: #050e1d !important;">
-                            <div class="p-md-5 p-3 position-relative">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h1 style="font-weight:bold; font-size:calc(1.1rem + 1vw); line-height:120%; text-align:center; text-transform:capitalize; font-size: 40px; font-weight: 700;">
-                                            <span style="font-size:calc(1.1rem + 1vw); color: #55919e !important;">
-                                                Imagen title 2
-                                            </span>
-                                        </h1>
-                                    </div>
-                                    <div class="col-md-12 mb-4">
-                                        <p style="font-weight:400; font-size:16px; line-height:150%; text-align:center;">
-                                            Description image 2
+                    <div class="tab-pane fade py-1" id="feature" role="tabpanel" aria-labelledby="feature-tab">
+                        <div class="row py-4">
+                            <div class="col-md-6 col-sm-12 p-3">
+                                <div class="d-flex flex-column align-items-start h-100 p-3 border border-info rounded-2 text-info">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-check-circle me-2"></i>
+                                        <p class="fw-semibold fs-5 mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor convallis porttitor
                                         </p>
                                     </div>
-                                    <div class="col-md-12 text-center">
-                                        <div class="d-inline-block p-3 shadow-sm" style="border-radius:10px">
-                                            <img alt="" class="img-fluid" loading="lazy" src="./assets/screenshots/2.png" style="min-height: 1px;">
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 p-3">
+                                <div class="d-flex flex-column align-items-start h-100 p-3 border border-info rounded-2 text-info">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-check-circle me-2"></i>
+                                        <p class="fw-semibold fs-5 mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor convallis porttitor
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Repite la misma estructura para otras columnas según sea necesario -->
                         </div>
-                    </div>
-                </div>
-                <div aria-labelledby="feature-tab" class="tab-pane fade show py-1" id="feature" role="tabpanel">
-                    <div class="row py-4">
-                        <div class="col-md-6 col-sm-12 p-3">
-                            <div class="d-flex flex-column align-items-start h-100" style="padding:30px; border-radius:12px;  border: 1px solid #55919e !important;">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <p style="color:55919e !important; font-weight:600; font-size:1.2rem; margin-bottom:2px">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor convallis porttitor
-                                    </p>
-                                </div>
+                    </div>                    
+                    <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h1 class="fw-bold text-info display-5">
+                                    FAQs
+                                </h1>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 p-3">
-                            <div class="d-flex flex-column align-items-start h-100" style="padding:30px; border-radius:12px;  border: 1px solid #55919e !important;">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <p style="color:55919e !important; font-weight:600; font-size:1.2rem; margin-bottom:2px">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor convallis porttitor
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 p-3">
-                            <div class="d-flex flex-column align-items-start h-100" style="padding:30px; border-radius:12px;  border: 1px solid #55919e !important;">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <p style="color:55919e !important; font-weight:600; font-size:1.2rem; margin-bottom:2px">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor convallis porttitor
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 p-3">
-                            <div class="d-flex flex-column align-items-start h-100" style="padding:30px; border-radius:12px;  border: 1px solid #55919e !important;">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <p style="color:55919e !important; font-weight:600; font-size:1.2rem; margin-bottom:2px">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor convallis porttitor
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div aria-labelledby="faq-tab" class="tab-pane fade show" id="faq" role="tabpanel">
-                    <div class="row">
-                        <div class="col-lg-12 d-flex flex-column align-items-center">
-                            <h1 class="text-center" style="font-family:Montserrat, 'sans-serif' !important; font-size:40px !important; font-weight:900 !important">
-                                <span style="color: #55919e !important">FAQs </span>
-                            </h1>
-                        </div>
-                        <div class="col-md-12" aria-labelledby="faq-tab" id="faq1" role="tabpanel">
-                            <div class="accordion mb-4" id="accordion6">
-                                <div>
-                                    <!-- accordian -->
-                                    <div class="accordion" id="accordion_faq">
-                                        <!-- Question 1 -->
-                                        <div style="margin:1rem 0rem">
-                                            <div aria-expanded="false" class="cursor-pointer card-header collapsed" data-bs-toggle="collapse" aria-controls="collapseFaq1" data-bs-target="#collapseFaq1"
-                                                style="cursor: pointer; background-color:#050e1d !important; border:1px solid #55919e !important; border-top-right-radius:10px; border-top-left-radius:10px; padding: 12px 24px">
-                                                <a class="card-title text-decoration-none" style=" font-size:18px; line-height:30px; font-weight:500; color: #55919e !important">
-                                                    Faq 1?
-                                                </a>
-                                            </div>
-                                            <div class="accordion-collapse collapse"
-                                                aria-labelledby="collapseFaq1" data-bs-parent="#accordion_faq"
-                                                id="collapseFaq1"
-                                                style="box-shadow: #0000000d 0px 6px 24px 0px; border: 1px solid #55919e !important; border-bottom-right-radius:10px; border-bottom-left-radius:10px">
-                                                <p style="padding:0.75rem 1.25rem; font-size:16px; line-height:27px; color: #55919e !important; font-weight:normal; border-bottom-right-radius:10px; border-bottom-left-radius:10px">
-                                                    Response 1
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- Question 2 -->
-                                        <div style="margin:1rem 0rem">
-                                            <div aria-expanded="false"
-                                                class="cursor-pointer card-header collapsed"
-                                                data-bs-toggle="collapse" aria-controls="collapseFaq2"
-                                                data-bs-target="#collapseFaq2"
-                                                style="cursor: pointer; background-color:#050e1d; border:1px solid #55919e !important; border-top-right-radius:10px; border-top-left-radius:10px; padding: 12px 24px">
-                                                <a class="card-title text-decoration-none" style=" font-size:18px; line-height:30px; font-weight:500; color: #55919e !important">
-                                                    Faq 2?
-                                                </a>
-                                            </div>
-                                            <div class="accordion-collapse collapse"
-                                                aria-labelledby="collapseFaq2" data-bs-parent="#accordion_faq"
-                                                id="collapseFaq2"
-                                                style="box-shadow: #0000000d 0px 6px 24px 0px; border: 1px solid #55919e !important; border-bottom-right-radius:10px; border-bottom-left-radius:10px">
-                                                <p style="padding:0.75rem 1.25rem; font-size:16px; line-height:27px; color: #55919e !important; font-weight:normal; border-bottom-right-radius:10px; border-bottom-left-radius:10px">
-                                                    Response 2
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- Question 3 -->
-                                        <div style="margin:1rem 0rem">
-                                            <div aria-expanded="false"
-                                                class="cursor-pointer card-header collapsed"
-                                                data-bs-toggle="collapse" aria-controls="collapseFaq3"
-                                                data-bs-target="#collapseFaq3"
-                                                style="cursor: pointer; background-color:#050e1d; border:1px solid #55919e !important; border-top-right-radius:10px; border-top-left-radius:10px; padding: 12px 24px">
-                                                <a class="card-title text-decoration-none" style=" font-size:18px; line-height:30px; font-weight:500; color: #55919e !important">
-                                                    Faq 3?
-                                                </a>
-                                            </div>
-                                            <div class="accordion-collapse collapse"
-                                                aria-labelledby="collapseFaq3" data-bs-parent="#accordion_faq"
-                                                id="collapseFaq3"
-                                                style="box-shadow: #0000000d 0px 6px 24px 0px; border: 1px solid #55919e !important; border-bottom-right-radius:10px; border-bottom-left-radius:10px">
-                                                <p style="padding:0.75rem 1.25rem; font-size:16px; line-height:27px; color: #55919e !important; font-weight:normal; border-bottom-right-radius:10px; border-bottom-left-radius:10px">
-                                                    Response 3
-                                                </p>
+                            <div class="col-md-12">
+                                <div class="accordion mb-4" id="accordion_faq">
+                                    <!-- FAQ Question 1 -->
+                                    <div class="accordion-item border border-info rounded-2 mb-3 shadow-sm">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-dark text-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1" aria-expanded="false" aria-controls="collapseFaq1">
+                                                Faq 1?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFaq1" class="accordion-collapse collapse" data-bs-parent="#accordion_faq">
+                                            <div class="accordion-body text-info">
+                                                Response 1
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Repeat similar structure for other FAQs -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Other modules -->
             <section id="services" class="mt-5" style="border-radius: 16px; border: 1px solid #EBEEF2; background-color: #050e1d !important; padding: 60px 40px; box-shadow: 0px 5px 20px -11px #00000040;">
